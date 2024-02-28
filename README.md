@@ -31,7 +31,7 @@ For example:
 - Kids can go on levels to die so the point of it is that their heads have to explode. 
 - You can throw grenades in the room but that does not mean that they will die right away tho. They will change just more durty. But the more durty they can die tho but not that extreme or something. 
 
-## Code inspiratie
+## Code inspiration
 
 **[Time with a div](https://codepen.io/elad2412/pen/DBeNNZ?editors=1100)**
 ```css
@@ -91,6 +91,7 @@ For example:
 ```
 
 **[Way of playing with the buttons](https://codepen.io/sowg/pen/GRvQxpN?editors=0110)**
+
 ![Code inspiration 1](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/codepen-inspiration-1.png)
 
 ## Resources
