@@ -94,6 +94,14 @@ For example:
 
 ![Code inspiration 1](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/codepen-inspiration-1.png)
 
+**[Active buttons](https://codepen.io/brundolf/pen/beagbQ)**
+
+```css
+&:active {
+    background:linear-gradient(to right, #565e6a 0%, #333 100%);
+}
+```
+
 ## Resources
 - https://www.flickr.com/photos/192959875@N05/53382522722/in/pool-controlpanel/
 - https://www.flickr.com/photos/154808163@N02/53302205646/in/pool-controlpanel/
