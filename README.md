@@ -13,7 +13,7 @@ I made 2 moodboards to begin with. 1 of photo’s of the website that we got to 
 
 And one on [Pinterest](https://nl.pinterest.com/xiaonanpols21/css-to-the-rescue/)
 
-![Moodboard 2](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/moodboard-2.jpg)
+![Moodboard 2](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/moodboard-2.png)
 
 I talked with Nils to help me brainstorm of an idea. I said to him that I want to do something with a screen and a keyboard. He looked at my moodboards and said some stuff of changing the heat when you click on a button. And with that I came up with the idea of killing stuff. So this is my idea:
 
