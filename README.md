@@ -102,6 +102,19 @@ For example:
 }
 ```
 
+## Sketch
+![Schets](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/schets.png)
+
+Here you have a screen where the content will be displayed. And then underneath you have the controls. 
+
+You can:
+
+- Shut down the window
+- Turn on the heat
+- Turn on the volume
+- Throw grenades
+- Give them bad candy
+
 ## Resources
 - https://www.flickr.com/photos/192959875@N05/53382522722/in/pool-controlpanel/
 - https://www.flickr.com/photos/154808163@N02/53302205646/in/pool-controlpanel/
