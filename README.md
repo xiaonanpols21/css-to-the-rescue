@@ -110,3 +110,4 @@ For example:
 - https://www.flickr.com/photos/ddm_creative_imaging/53008443453/sizes/l/
 - https://www.flickr.com/photos/ddm_creative_imaging/52929471314/sizes/l/
 - https://cambridgedynamics.com/automation/control-panel-design-and-build/
+- https://nl.vecteezy.com/vector-kunst/6581802-set-van-zieke-mensen-met-verschillende-symptomen
