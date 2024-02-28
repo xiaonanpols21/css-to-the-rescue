@@ -103,7 +103,7 @@ For example:
 ```
 
 ## Sketch
-![Schets](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/schets.png)
+![Schets](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/schets-1.png)
 
 Here you have a screen where the content will be displayed. And then underneath you have the controls. 
 
