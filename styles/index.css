@@ -1,0 +1,65 @@
+/* Standaard */
+:root {
+    --black: black;
+    --blue: #59D2FF;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Madimi One", sans-serif;
+    padding: 20px;
+}
+
+h2 {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+/* Titel */
+h1 {
+    font-size: 42px;
+    text-align: center;
+}
+
+/* Section */
+section {
+    border: 4px solid var(--black);
+    border-radius: 20px;
+    height: 440px;
+    margin: 20px -10px;
+}
+
+/* Form */
+fieldset {
+    &:nth-of-type(3) {
+        /* Bron: https://stackoverflow.com/questions/15935837/how-to-display-a-range-input-slider-vertically */
+        input {
+            appearance: slider-vertical;
+            width: 8px;
+            height: 180px;
+        }
+    }
+
+    &:nth-of-type(4) {
+        button {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 5px solid var(--black);
+            background-color: var(--blue);
+        }
+    }
+}
+
+
+
+

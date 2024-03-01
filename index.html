@@ -4,30 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kids Killer</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Kids killer</h1>
-    <canvas>
+    <section>
+        <h2>Game screen</h2>
 
-    </canvas>
+
+    </section>
     <form>
         <!-- Switch grenades -->
-        <label class="switch">
-            <input type="checkbox">
-            <span></span>
-        </label>
+        <fieldset>
+            <label class="switch">
+                <input type="checkbox">
+                <span></span>
+            </label>
+        </fieldset>
 
         <!-- Verwarming -->
-        <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="90" step="10" />
-        <label for="cowbell">Cowbell</label>
+        <fieldset>
+            <input type="range"  min="1" max="100" value="50">
+        </fieldset>
 
         <!-- Volume -->
-        <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="90" step="10" />
-        <label for="cowbell">Cowbell</label>
+        <fieldset>
+            <input type="range"  min="1" max="100" value="50">
+        </fieldset>
 
-        <button>Shut down window</button>
-        <button>Zuurstof weghalen</button>
-        <button>Overstroming</button>
+        <fieldset>
+            <button></button>
+            <button></button>
+            <button></button>
+        </fieldset>
     </form>
 </body>
 </html>
