@@ -1,4 +1,4 @@
-# CSS To The Killing
+# CSS To The Rescue
 
 ## Assignment 
 For my assignment I choose to do the: ‘Modular Control Panel’. 
@@ -116,6 +116,9 @@ You can:
 - Give them bad candy
 - Make oxygen go away
 - Let the water fall
+
+## Design
+![Design](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/design-1.png)
 
 ## Progress discussion
 I talked with Sanne about my idea. He said that it was not a good idea to keep up with this subject. I can keep the controls but change the kids to monsters or something to make it more friendly. Sighn. So I should rethink about my project.
