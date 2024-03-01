@@ -114,6 +114,8 @@ You can:
 - Turn on the volume
 - Throw grenades
 - Give them bad candy
+- Make oxygen go away
+- Let the water fall
 
 ## Resources
 - https://www.flickr.com/photos/192959875@N05/53382522722/in/pool-controlpanel/
@@ -124,3 +126,11 @@ You can:
 - https://www.flickr.com/photos/ddm_creative_imaging/52929471314/sizes/l/
 - https://cambridgedynamics.com/automation/control-panel-design-and-build/
 - https://nl.vecteezy.com/vector-kunst/6581802-set-van-zieke-mensen-met-verschillende-symptomen
+- https://nl.vecteezy.com/vector-kunst/1377102-little-kids-friendly-character-set
+- https://nl.vecteezy.com/vector-kunst/1759689-happy-cute-kid-girl-with-different-poses
+- https://nl.vecteezy.com/vector-kunst/101875-gratis-boom-vector
+- https://nl.vecteezy.com/vector-kunst/105778-gratis-radiator-vector
+- https://nl.vecteezy.com/vector-kunst/14531368-spreker-icoon-vector-muziek-systeem-audio-doos-geluid-systeem-stereo-spreker-geluid-icoon-vector-geisoleerd-symbool-teken
+- https://nl.vecteezy.com/vector-kunst/6817337-pop-art-design-elementen-retro-bliksemschicht
+- https://nl.vecteezy.com/vector-kunst/577093-kruk-stoel-zitmeubelen-illustratie
+- https://nl.vecteezy.com/vector-kunst/2525492-glas-van-water-plat-ontwerp-geisoleerd-op-blauwe-achtergrond
