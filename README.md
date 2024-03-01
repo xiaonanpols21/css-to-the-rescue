@@ -17,8 +17,8 @@ And one on [Pinterest](https://nl.pinterest.com/xiaonanpols21/css-to-the-rescue/
 
 I talked with Nils to help me brainstorm of an idea. I said to him that I want to do something with a screen and a keyboard. He looked at my moodboards and said some stuff of changing the heat when you click on a button. And with that I came up with the idea of killing stuff. So this is my idea:
 
-<details>
-<summary><h3>Kids killer</h3></summary>
+### Kids killer
+
 I am going to make an Arcade machine where you can click on buttons and something will happen on the screen. I thought of making a Kids killer machine. 
 
 Kids are in the room and with the buttons you can change the rooms or other to kill them. 
@@ -30,8 +30,6 @@ For example:
 - And when you wait too long, kids will undo things to save themselves. So you have to be fast.
 - Kids can go on levels to die so the point of it is that their heads have to explode. 
 - You can throw grenades in the room but that does not mean that they will die right away tho. They will change just more durty. But the more durty they can die tho but not that extreme or something. 
-</details>
-
 
 ## Code inspiration
 
