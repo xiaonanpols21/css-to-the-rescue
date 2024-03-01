@@ -31,6 +31,8 @@ For example:
 - Kids can go on levels to die so the point of it is that their heads have to explode. 
 - You can throw grenades in the room but that does not mean that they will die right away tho. They will change just more durty. But the more durty they can die tho but not that extreme or something. 
 
+### Idea 2: Make your dream prince
+
 ## Code inspiration
 
 **[Time with a div](https://codepen.io/elad2412/pen/DBeNNZ?editors=1100)**
@@ -120,10 +122,16 @@ You can:
 ## Design
 ![Design](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/design-1.png)
 
+## Versions
+
+### Version 1
+![Versie 1](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/versie-1.png)
+I started to make the inputs in the HTML and some styling. But I just couldn't firgure out how to make a switch and a round slider. 
+
 ## Progress discussion
 I talked with Sanne about my idea. He said that it was not a good idea to keep up with this subject. I can keep the controls but change the kids to monsters or something to make it more friendly. Sighn. So I should rethink about my project.
 
-Sanne helped me to understand to make a rotate slider and to make a casino switch.
+Sanne helped me to understand to make a rotate slider and to make a casino switch because I said to him that I was stuck of understanding how to make these things.
 
 - https://codepen.io/shooft/pen/OJGJeVa
 - https://codepen.io/shooft/pen/BaEagwe
