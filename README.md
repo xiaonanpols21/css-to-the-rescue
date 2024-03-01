@@ -117,6 +117,14 @@ You can:
 - Make oxygen go away
 - Let the water fall
 
+## Progress discussion
+I talked with Sanne about my idea. He said that it was not a good idea to keep up with this subject. I can keep the controls but change the kids to monsters or something to make it more friendly. Sighn. So I should rethink about my project.
+
+Sanne helped me to understand to make a rotate slider and to make a casino switch.
+
+- https://codepen.io/shooft/pen/OJGJeVa
+- https://codepen.io/shooft/pen/BaEagwe
+
 ## Resources
 - https://www.flickr.com/photos/192959875@N05/53382522722/in/pool-controlpanel/
 - https://www.flickr.com/photos/154808163@N02/53302205646/in/pool-controlpanel/
