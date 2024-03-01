@@ -17,7 +17,7 @@ And one on [Pinterest](https://nl.pinterest.com/xiaonanpols21/css-to-the-rescue/
 
 I talked with Nils to help me brainstorm of an idea. I said to him that I want to do something with a screen and a keyboard. He looked at my moodboards and said some stuff of changing the heat when you click on a button. And with that I came up with the idea of killing stuff. So this is my idea:
 
-### Kids killer
+### Idea 1: Kids killer
 
 I am going to make an Arcade machine where you can click on buttons and something will happen on the screen. I thought of making a Kids killer machine. 
 
