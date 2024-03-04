@@ -1,5 +1,4 @@
 # CSS To The Rescue
-
 ## Assignment 
 For my assignment I choose to do the: ‘Modular Control Panel’. 
 The 2 CSS architecture that I want to use are: @layer and Style queries. 
@@ -18,7 +17,6 @@ And one on [Pinterest](https://nl.pinterest.com/xiaonanpols21/css-to-the-rescue/
 I talked with Nils to help me brainstorm of an idea. I said to him that I want to do something with a screen and a keyboard. He looked at my moodboards and said some stuff of changing the heat when you click on a button. And with that I came up with the idea of killing stuff. So this is my idea:
 
 ### Idea 1: Kids killer
-
 I am going to make an Arcade machine where you can click on buttons and something will happen on the screen. I thought of making a Kids killer machine. 
 
 Kids are in the room and with the buttons you can change the rooms or other to kill them. 
@@ -31,10 +29,10 @@ For example:
 - Kids can go on levels to die so the point of it is that their heads have to explode. 
 - You can throw grenades in the room but that does not mean that they will die right away tho. They will change just more durty. But the more durty they can die tho but not that extreme or something. 
 
-### Idea 2: Make your dream prince
+### Idea 2: Make your significant other
+I am going to make a simulator where you can style the perfect match for yourself. TanTan is an Asian dating app so that's why the name is TanTan en the person is familiar to an Asian person. 
 
 ## Code inspiration
-
 **[Time with a div](https://codepen.io/elad2412/pen/DBeNNZ?editors=1100)**
 ```css
 @keyframes timer{
@@ -105,8 +103,8 @@ For example:
 ```
 
 ## Sketch
+### Idea 1: Kids killer
 ![Schets](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/schets-1.png)
-
 Here you have a screen where the content will be displayed. And then underneath you have the controls. 
 
 You can:
@@ -119,11 +117,26 @@ You can:
 - Make oxygen go away
 - Let the water fall
 
+
+### Idea 2: Make your significant other
+![Schets](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/schets-2.png)
+Here you have a screen where the content will be displayed. And then underneath you have the controls. 
+
+You can:
+
+- Change hair style
+- Change skin color
+- Change clothes
+- Switch gender
+
 ## Design
+### Idea 1: Kids killer
 ![Design](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/design-1.png)
 
-## Versions
+### Idea 2: Make your significant other
+![Design](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/design-2.png)
 
+## Versions
 ### Version 1
 ![Versie 1](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/versie-1.png)
 I started to make the inputs in the HTML and some styling. But I just couldn't firgure out how to make a switch and a round slider. 
