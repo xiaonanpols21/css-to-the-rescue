@@ -1,5 +1,4 @@
 const ranges = document.querySelectorAll('[type="range"]');
-
 const updateRange = range => {
 	// the name of the custom property is the name of the input
 	const rangeName = range.name;
