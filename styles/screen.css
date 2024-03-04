@@ -1,0 +1,8 @@
+section {
+    &:first-of-type {
+        border: 4px solid var(--black);
+        border-radius: 20px;
+        height: 440px;
+        margin: 20px -10px;
+    }
+}

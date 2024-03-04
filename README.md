@@ -141,7 +141,9 @@ You can:
 I started to make the inputs in the HTML and some styling. But I just couldn't firgure out how to make a switch and a round slider. 
 
 ## Progress discussion
-I talked with Sanne about my idea. He said that it was not a good idea to keep up with this subject. I can keep the controls but change the kids to monsters or something to make it more friendly. Sighn. So I should rethink about my project.
+I talked with Sanne about my first idea. He said that it was not a good idea to keep up with this subject. I can keep the controls but change the kids to monsters or something to make it more friendly. Sighn. So I should rethink about my project.
+
+After some thinking I go with my second idea of making a simulator to make your siginifant other
 
 Sanne helped me to understand to make a rotate slider and to make a casino switch because I said to him that I was stuck of understanding how to make these things.
 
