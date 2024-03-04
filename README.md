@@ -140,6 +140,13 @@ You can:
 ![Versie 1](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/versie-1.png)
 I started to make the inputs in the HTML and some styling. But I just couldn't firgure out how to make a switch and a round slider. 
 
+### Version 2
+![Versie 2](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/versie-2.png)
+With the Codepens from Sanne I could understand better how to build my idea on screen. 
+
+![Form > section](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/versie-2-2.png)
+First in the HTML I had a form but when you click on the buttons, the page will refresh but that's not what I want so I changed form to section. But then I thought that I should also change fieldset to section.
+
 ## Progress discussion
 I talked with Sanne about my first idea. He said that it was not a good idea to keep up with this subject. I can keep the controls but change the kids to monsters or something to make it more friendly. Sighn. So I should rethink about my project.
 
