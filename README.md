@@ -153,3 +153,4 @@ Sanne helped me to understand to make a rotate slider and to make a casino switc
 - https://nl.vecteezy.com/vector-kunst/6817337-pop-art-design-elementen-retro-bliksemschicht
 - https://nl.vecteezy.com/vector-kunst/577093-kruk-stoel-zitmeubelen-illustratie
 - https://nl.vecteezy.com/vector-kunst/2525492-glas-van-water-plat-ontwerp-geisoleerd-op-blauwe-achtergrond
+- https://nl.vecteezy.com/vector-kunst/13396613-chinese-restaurant-leeg-interieur-tekenfilm-vector
