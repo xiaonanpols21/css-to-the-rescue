@@ -117,9 +117,8 @@ You can:
 - Make oxygen go away
 - Let the water fall
 
-
 ### Idea 2: Make your significant other
-![Schets](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/schets-2.png)
+![Schets](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/schets-2-1.png)
 Here you have a screen where the content will be displayed. And then underneath you have the controls. 
 
 You can:
