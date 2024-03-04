@@ -147,6 +147,9 @@ With the Codepens from Sanne I could understand better how to build my idea on s
 ![Form > section](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/versie-2-2.png)
 First in the HTML I had a form but when you click on the buttons, the page will refresh but that's not what I want so I changed form to section. But then I thought that I should also change fieldset to section.
 
+### Version 3
+
+
 ## Progress discussion
 I talked with Sanne about my first idea. He said that it was not a good idea to keep up with this subject. I can keep the controls but change the kids to monsters or something to make it more friendly. Sighn. So I should rethink about my project.
 
