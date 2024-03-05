@@ -1,7 +1,12 @@
 body {
-    section {
+    > section {
         &:last-of-type {
+            display: grid;
+            grid-template-columns: 0.5fr 1fr;
+            gap: 20px;
+
             section {
+                /* Swtich gender */
                 &:nth-of-type(1) {
                     label {
                         display:grid;
@@ -59,12 +64,11 @@ body {
                         transform:translateY( calc(-1em - 1px) ) rotateX(180deg);
                     }
                 }
-            
+                
+                /* Change clothes */
                 &:nth-of-type(2) {
-            
-                        display:grid;
+                    display:grid;
               
-                    
                     label {
                         display:inline-flex;
                         align-items:center;
@@ -94,27 +98,63 @@ body {
                         
                         transform-origin:center bottom;
                         
-                        rotate:calc( 90deg * var(--clothes) );
+                        rotate:calc( -90deg + (var(--clothes) - 1) * 60deg );
                     }
                 }
-            
+                
+                /* Change skin color */
                 &:nth-of-type(3) {
+                    grid-column-start: 2;
                     /* Bron: https://stackoverflow.com/questions/15935837/how-to-display-a-range-input-slider-vertically */
                     input {
-                        appearance: slider-vertical;
+                        /* appearance: slider-horizontal;
                         width: 8px;
-                        height: 180px;
+                        height: 180px; */
                     }
                 }
-            
+                
+                /* Change hair */
                 &:nth-of-type(4) {
-                    button {
-                        width: 60px;
-                        height: 60px;
+                    grid-column-start: 2;
+                    display: flex;
+                    gap: 20px;
+
+                    /* Bron: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio */
+                    .container {
+                        display: block;
+                        position: relative;
+                        width: 50px;
+                        height: 50px;
+                        cursor: pointer;
+                      }
+                      
+                      /* Hide the browser's default radio button */
+                      .container input {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                      }
+                      
+                      /* Create a custom radio button */
+                      .checkmark {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 50px;
+                        width: 50px;
+                        background-color: #eee;
                         border-radius: 50%;
-                        border: 5px solid var(--black);
-                        background-color: var(--blue);
-                    }
+                      }
+                      
+                      /* On mouse-over, add a grey background color */
+                      .container:hover input ~ .checkmark {
+                        background-color: #ccc;
+                      }
+                      
+                      /* When the radio button is checked, add a blue background */
+                      .container input:checked ~ .checkmark {
+                        background-color: #2196F3;
+                      }
                 }
             }
         }

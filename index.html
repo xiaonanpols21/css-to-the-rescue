@@ -42,7 +42,6 @@
     </section>
     <section>
         <h2>Simulator buttons</h2>
-
         <section>
             <h3>Switch gender input</h3>
             <label>
@@ -53,7 +52,7 @@
         <section>
             <h3>Change clothes</h3>
             <label>
-                <input type="range" min="-1" max="1" step=".5" value=".5" name="clothes" orient="horizontal">	
+                <input type="range" min="1" max="4" step="1" value="1" name="clothes" orient="horizontal">	
             </label>
             <div></div>
         </section>
@@ -65,12 +64,19 @@
 
         <section>
             <h3>Change hair style</h3>
-            <input type="radio" id="html" name="fav_language" value="HTML" checked>
-            <label for="html">HTML</label>
-            <input type="radio" id="css" name="fav_language" value="CSS">
-            <label for="css">CSS</label>
-            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-            <label for="javascript">JavaScript</label>
+            <label class="container">
+                <input type="radio" checked="checked" name="hair-style" value="Hair-1">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="hair-style" value="Hair-2">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="hair-style" value="Hair-3">
+                <span class="checkmark"></span>
+            </label>
+    
         </section>
     </section>
     <script src="js/index.js"></script>
