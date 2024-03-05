@@ -14,7 +14,36 @@ body {
                 width: 248px;
                 height: 440px;
 
+                /* Clothes */
                 &:nth-of-type(1) {
+                    position: absolute;
+                    height: 100%;
+                    z-index: 1;
+
+                    div {
+                        background-image: url("");
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        height: 100%;
+                    }
+                }
+
+                /* Face */
+                &:nth-of-type(2) {
+                    position: absolute;
+                    height: 100%;
+                    z-index: 1;
+
+                    div {
+                        background-image: url("../img/boy-face.svg");
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        height: 100%;
+                    }
+                }
+
+                /* Body */
+                &:nth-of-type(3) {
                     position: absolute;
                     height: 100%;
 
@@ -23,13 +52,12 @@ body {
                         background-repeat: no-repeat;
                         background-position: center;
                         height: 100%;
-                        /* FIXME: */
-                        filter: hsl(calc(100% * var(--skin, 0.5)));
-                 
+                        filter: brightness(calc(0.6 + var(--skin, 3) / 10));
                     }
                 }
 
-                &:nth-of-type(2) {
+                /* Hair */
+                &:nth-of-type(4) {
                     position: absolute;
                     height: 100%;
 
@@ -45,13 +73,32 @@ body {
     }
 
     /* 
+        **** Change clothes ***
+    */
+    &:has(input[type="range"][value="-0.5"]) {
+        > section {
+            &:first-of-type {
+                section {
+                    /* Clothes */
+                    &:nth-of-type(1) {
+                        div {
+                            background-image: url("../img/boy-clothes-1.svg");
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* 
         **** Hair input ***
     */
     &:has(input[value="HTML"]:checked) {
         > section {
             &:first-of-type {
                 section {
-                    &:nth-of-type(2) {
+                    /* Hair */
+                    &:nth-of-type(4) {
                         div {
                             background-image: url("../img/boy-hair-1.svg");
                         }
@@ -65,7 +112,8 @@ body {
         > section {
             &:first-of-type {
                 section {
-                    &:nth-of-type(2) {
+                    /* Hair */
+                    &:nth-of-type(4) {
                         div {
                             background-image: url("../img/boy-hair-2.svg");
                         }
@@ -79,7 +127,8 @@ body {
         > section {
             &:first-of-type {
                 section {
-                    &:nth-of-type(2) {
+                    /* Hair */
+                    &:nth-of-type(4) {
                         div {
                             background-image: url("../img/boy-hair-3.svg");
                         }
@@ -96,11 +145,21 @@ body {
         > section {
             &:first-of-type {
                 section {
-                    &:nth-of-type(1) {
+                    /* Face */
+                    &:nth-of-type(2) {
+                        div {
+                            background-image: url("../img/girl-face.svg");
+                        }
+                    }
+
+                    /* Body */
+                    &:nth-of-type(3) {
                         div {
                             background-image: url("../img/girl-body.svg");
                         }
                     }
+
+                    
                 }
             }
         }
@@ -110,12 +169,12 @@ body {
         **** Body girl + hair ***
     */
     &:has(input[type="checkbox"]:checked) {
-
         &:has(input[value="HTML"]:checked) {
             > section {
                 &:first-of-type {
                     section {
-                        &:nth-of-type(2) {
+                        /* Hair */
+                        &:nth-of-type(4) {
                             div {
                                 background-image: url("../img/girl-hair-1.svg");
                             }
@@ -129,7 +188,8 @@ body {
             > section {
                 &:first-of-type {
                     section {
-                        &:nth-of-type(2) {
+                        /* Hair */
+                        &:nth-of-type(4) {
                             div {
                                 background-image: url("../img/girl-hair-1.svg");
 
@@ -154,7 +214,8 @@ body {
             > section {
                 &:first-of-type {
                     section {
-                        &:nth-of-type(2) {
+                        /* Hair */
+                        &:nth-of-type(4) {
                             div {
                                 background-image: url("../img/girl-hair-3.svg");
                             }

@@ -94,7 +94,7 @@ body {
                         
                         transform-origin:center bottom;
                         
-                        rotate:calc( 90deg * var(--draai) );
+                        rotate:calc( 90deg * var(--clothes) );
                     }
                 }
             
