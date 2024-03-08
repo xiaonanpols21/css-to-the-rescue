@@ -6,83 +6,117 @@ body {
             gap: 20px;
 
             section {
+                input[type=range] {
+                    display: flex;
+                    margin: auto;
+                    width: 80%;
+                }
+                
                 /* Swtich gender */
                 &:nth-of-type(1) {
+                    grid-row-start: 1;
+                    grid-row-end: 3;
+                    position: relative;
+                    margin: auto;
+                    padding-top: 50px;
+
+                    &::before {
+                        content:"";
+                        position: absolute;
+                        bottom: -60px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 60px;
+                        height: 60px;
+                        background-color: var(--yellow);
+                    }
+
+                    input {
+                        opacity: 0;
+                    }
+
                     label {
                         display:grid;
                         
-                        height:6em;
-                        width:1em;
-                        background-color:green;
+                        height: 75px;
+                        width: 20px;
+                        background-color: var(--orange-100);
                         
-                        transition:3s;
+                        transition:2.5s;
                         transform-origin:center bottom;
                         transform:perspective(10em) rotateX(0deg);
                         
-                        place-content:start center;
-                        transform-style:preserve-3d;
+                        place-content: start center;
+                        transform-style: preserve-3d;
+      
+          
                         
-                        transition-timing-function: linear(
-                            /* Start to 1st bounce */
-                            0, 0.004, 0.016, 0.035, 0.063 9.1%, 0.141, 0.25, 0.391, 0.563, 0.765, 1,
-                            /* 1st to 2nd bounce */
-                            0.891, 0.813 45.5%, 0.785, 0.766, 0.754, 0.75, 0.754, 0.766, 0.785, 0.813 63.6%, 0.891, 1 72.7%,
-                            /* 2nd to 3rd bounce */
-                            0.973, 0.953, 0.941, 0.938, 0.941, 0.953, 0.973, 1,
-                            /* 3rd bounce to end */
-                            0.988, 0.984, 0.988, 1
-                        );
                     }
                     
                     label:has(:checked) {
-                        transform:perspective(10em) rotateX(-180deg);
+                        transform:perspective(150px) rotateX(-180deg);
                     }
                     
                     label::before {
                         content:"";
                         position:relative;
                         display:block;
-                        width:2em;
-                        height:2em;
-                        background-color:red;
+                        width: 70px;
+                        height:70px;
+                        background-color: var(--orange-200);
                         border-radius:50%;
-                        transform:translateY( calc(-1em - 1px) ) rotateX(0deg);
-                        transition:3s;
-                        transition-timing-function: linear(
-                            /* Start to 1st bounce */
-                            0, 0.004, 0.016, 0.035, 0.063 9.1%, 0.141, 0.25, 0.391, 0.563, 0.765, 1,
-                            /* 1st to 2nd bounce */
-                            0.891, 0.813 45.5%, 0.785, 0.766, 0.754, 0.75, 0.754, 0.766, 0.785, 0.813 63.6%, 0.891, 1 72.7%,
-                            /* 2nd to 3rd bounce */
-                            0.973, 0.953, 0.941, 0.938, 0.941, 0.953, 0.973, 1,
-                            /* 3rd bounce to end */
-                            0.988, 0.984, 0.988, 1
-                        );
+                        transform:translateY( calc(-50px - 1px) ) rotateX(0deg);
+                        transition:2.5s;
                     }
+
+                    /* label::after {
+                        content:"";
+                        position: absolute;
+                        bottom: -60px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 60px;
+                        height: 60px;
+                        background-color: var(--yellow);
+                        z-index: -1;
+                    } */
                     
                     label:has(:checked)::before {
-                        transform:translateY( calc(-1em - 1px) ) rotateX(180deg);
+                        transform:translateY( calc(-50px - 1px) ) rotateX(180deg);
                     }
                 }
                 
                 /* Change clothes */
                 &:nth-of-type(2) {
-                    display:grid;
-              
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+
                     label {
-                        display:inline-flex;
-                        align-items:center;
+                        position: absolute;
+                        bottom: -20px;
+                        z-index: 1;
+                        opacity: 0;
                     }
                     
                     div {
-                        position:relative;
+                        position:absolute;
                         width:8em;
                         aspect-ratio:2/1;
-                        background-color:green;
+                        background-color: var(--orange-100);
                         border-radius:4em 4em 0 0;
                         
                         display:grid;
                         place-items:end center;
+                    }
+
+                    div::before {
+                        content: "";
+                        width: 200px;
+                        height: 64px;
+                        background-color: var(--yellow);
+                        border-radius: 10px;
+                        z-index: -1;
                     }
                     
                     div::after {
@@ -92,7 +126,7 @@ body {
                         width:1em;
                         height:100%;
                         
-                        background-color:purple;
+                        background-color: var(--orange-200);
                         
                         clip-path:polygon(50% 0, 100% 100%, 0 100%, 50% 0);
                         
@@ -105,11 +139,33 @@ body {
                 /* Change skin color */
                 &:nth-of-type(3) {
                     grid-column-start: 2;
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
+
                     /* Bron: https://stackoverflow.com/questions/15935837/how-to-display-a-range-input-slider-vertically */
                     input {
-                        /* appearance: slider-horizontal;
-                        width: 8px;
-                        height: 180px; */
+                        position: relative;
+                        top: 60%;
+                        transform: translateY(-50%);
+                        height: 10px;
+                        appearance: none;
+                        background: var(--blue);
+                        border-radius: 20px;
+
+                        &::-webkit-slider-thumb {
+                            appearance: none;
+                            width: 10px;
+                            height: 40px;
+                            background: var(--orange-200);
+                            border-radius: 20px;
+                        }
+
+                        /* FIXME: */
+                        /* &::-webkit-slider-runnable-track {
+                            background: red;
+                            height: 10px;
+                        } */
                     }
                 }
                 
@@ -117,6 +173,7 @@ body {
                 &:nth-of-type(4) {
                     grid-column-start: 2;
                     display: flex;
+                    justify-content: center;
                     gap: 20px;
 
                     /* Bron: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio */
@@ -126,35 +183,39 @@ body {
                         width: 50px;
                         height: 50px;
                         cursor: pointer;
-                      }
-                      
-                      /* Hide the browser's default radio button */
-                      .container input {
+                    }
+
+                    .container input {
                         position: absolute;
                         opacity: 0;
                         cursor: pointer;
-                      }
+                    }
                       
-                      /* Create a custom radio button */
-                      .checkmark {
+                    .checkmark {
                         position: absolute;
                         top: 0;
                         left: 0;
                         height: 50px;
                         width: 50px;
-                        background-color: #eee;
+                        background-color: var(--black);
                         border-radius: 50%;
-                      }
+
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            background-image: url("../img/schaar.svg");
+                            width: 18px;
+                            height: 19px;
+                        }
+                    }
                       
-                      /* On mouse-over, add a grey background color */
-                      .container:hover input ~ .checkmark {
-                        background-color: #ccc;
-                      }
-                      
-                      /* When the radio button is checked, add a blue background */
-                      .container input:checked ~ .checkmark {
-                        background-color: #2196F3;
-                      }
+                    /* When the radio button is checked, add a blue background */
+                    .container input:checked ~ .checkmark {
+                        background-color: var(--orange-100);
+                    }
                 }
             }
         }

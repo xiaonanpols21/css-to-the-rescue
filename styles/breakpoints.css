@@ -1,0 +1,66 @@
+
+@media (min-width: 576px) { 
+    body {
+        width: 500px;
+        margin: auto;
+    }
+}
+
+
+@media (min-width: 768px) { 
+    
+}
+
+
+@media (min-width: 992px) { 
+    body {
+        width: 800px;
+
+        > section {
+            &:last-of-type {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+
+                section {
+                    &:nth-of-type(1) {
+                        grid-row-start: 1;
+                        grid-row-end: 2;
+                    }
+
+                    &:nth-of-type(2) {
+                        grid-column-start: 2;
+                    }
+
+                    &:nth-of-type(3) {
+                        grid-column-start: 3;
+
+                        /* Bron: https://codepen.io/ATC-test/pen/myPNqW?editors=1100 */
+                        input { 
+                            height: 180px;
+                            appearance: slider-vertical;
+
+                            &::-webkit-slider-runnable-track {
+                                background-color: var(--blue);
+                                border-radius: 20px;
+                                width: 10px;
+                            }
+                        }
+                    }
+
+                    &:nth-of-type(4) {
+                        grid-column-start: 4;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1200px) { 
+    
+}
+
+
+@media (min-width: 1400px) { 
+    
+}
