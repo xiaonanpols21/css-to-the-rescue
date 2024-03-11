@@ -19,7 +19,6 @@
         > section {
             &:first-of-type {
                 margin-top: 10px;
-                height: 400px;
             }
 
             &:last-of-type {
@@ -30,13 +29,22 @@
                     &:nth-of-type(1) {
                         grid-row-start: 1;
                         grid-row-end: 2;
+
+                        label {
+                            height: 50px;
+
+                            &::before {
+                                width: 60px;
+                                height: 60px;
+                            }
+                        }
                     }
 
                     &:nth-of-type(2) {
                         grid-column-start: 2;
                         
                         label {
-                            bottom: 60px;
+                            bottom: 30px;
                         }
                     }
 

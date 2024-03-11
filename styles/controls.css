@@ -47,9 +47,6 @@ body {
                         transform:perspective(10em) rotateX(0deg);
                         place-content: start center;
                         transform-style: preserve-3d;
-      
-          
-                        
                     }
                     
                     label:has(:checked) {
