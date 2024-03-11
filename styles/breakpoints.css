@@ -17,8 +17,14 @@
         width: 800px;
 
         > section {
+            &:first-of-type {
+                margin-top: 10px;
+                height: 400px;
+            }
+
             &:last-of-type {
-                grid-template-columns: 1fr 1fr 1fr 1fr;
+                padding: 0px 20px;
+                grid-template-columns: 1fr 1fr 0.5fr 1fr;
 
                 section {
                     &:nth-of-type(1) {
@@ -28,21 +34,19 @@
 
                     &:nth-of-type(2) {
                         grid-column-start: 2;
+                        
+                        label {
+                            bottom: 60px;
+                        }
                     }
 
                     &:nth-of-type(3) {
                         grid-column-start: 3;
 
-                        /* Bron: https://codepen.io/ATC-test/pen/myPNqW?editors=1100 */
+                        /* Bron: https://stackoverflow.com/questions/15935837/how-to-display-a-range-input-slider-vertically */
                         input { 
-                            height: 180px;
-                            appearance: slider-vertical;
-
-                            &::-webkit-slider-runnable-track {
-                                background-color: var(--blue);
-                                border-radius: 20px;
-                                width: 10px;
-                            }
+                            transform: rotate(270deg);
+                            width: 130px;
                         }
                     }
 

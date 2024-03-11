@@ -1,7 +1,7 @@
 # CSS To The Rescue
 ## Assignment 
 For my assignment I choose to do the: ‘Modular Control Panel’. 
-The 2 CSS architecture that I want to use are: @layer and Style queries. 
+The 2 CSS architecture that I want to use are: Nesting and Style queries. 
 
 The challenge with this assignment is that I have to learn new techniques and that I have to think outside of the box. I’m not good in those things so that’s what I want to work on. 
 
