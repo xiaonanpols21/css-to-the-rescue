@@ -29,6 +29,16 @@ For example:
 - Kids can go on levels to die so the point of it is that their heads have to explode. 
 - You can throw grenades in the room but that does not mean that they will die right away tho. They will change just more durty. But the more durty they can die tho but not that extreme or something. 
 
+**Progress discussion**
+I talked with Sanne about my first idea. He said that it was not a good idea to keep up with this subject. I can keep the controls but change the kids to monsters or something to make it more friendly. Sighn. So I should rethink about my project.
+
+After some thinking I go with my second idea of making a simulator to make your siginifant other
+
+Sanne helped me to understand to make a rotate slider and to make a casino switch because I said to him that I was stuck of understanding how to make these things.
+
+- https://codepen.io/shooft/pen/OJGJeVa
+- https://codepen.io/shooft/pen/BaEagwe
+
 ### Idea 2: Make your significant other
 I am going to make a simulator where you can style the perfect match for yourself. TanTan is an Asian dating app so that's why the name is TanTan en the person is familiar to an Asian person. 
 
@@ -173,31 +183,8 @@ I use container styles to change the the url of the rotate switch for the clothi
 ![Versie 4](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/versie-4-4.png)
 To change the skin color, I use filter: brightness. Nils helped me with this one to make the calculation. But I don't understand it well yet. 
 
-## Progress discussion
-I talked with Sanne about my first idea. He said that it was not a good idea to keep up with this subject. I can keep the controls but change the kids to monsters or something to make it more friendly. Sighn. So I should rethink about my project.
-
-After some thinking I go with my second idea of making a simulator to make your siginifant other
-
-Sanne helped me to understand to make a rotate slider and to make a casino switch because I said to him that I was stuck of understanding how to make these things.
-
-- https://codepen.io/shooft/pen/OJGJeVa
-- https://codepen.io/shooft/pen/BaEagwe
-
 ## Resources
-- https://www.flickr.com/photos/192959875@N05/53382522722/in/pool-controlpanel/
-- https://www.flickr.com/photos/154808163@N02/53302205646/in/pool-controlpanel/
-- https://www.flickr.com/photos/9716802@N02/2521039431/in/pool-controlpanel/
-- https://www.flickr.com/photos/9716802@N02/24494186518/in/pool-controlpanel/
-- https://www.flickr.com/photos/ddm_creative_imaging/53008443453/sizes/l/
-- https://www.flickr.com/photos/ddm_creative_imaging/52929471314/sizes/l/
-- https://cambridgedynamics.com/automation/control-panel-design-and-build/
-- https://nl.vecteezy.com/vector-kunst/6581802-set-van-zieke-mensen-met-verschillende-symptomen
 - https://nl.vecteezy.com/vector-kunst/1377102-little-kids-friendly-character-set
+- https://cambridgedynamics.com/automation/control-panel-design-and-build/
 - https://nl.vecteezy.com/vector-kunst/1759689-happy-cute-kid-girl-with-different-poses
-- https://nl.vecteezy.com/vector-kunst/101875-gratis-boom-vector
-- https://nl.vecteezy.com/vector-kunst/105778-gratis-radiator-vector
-- https://nl.vecteezy.com/vector-kunst/14531368-spreker-icoon-vector-muziek-systeem-audio-doos-geluid-systeem-stereo-spreker-geluid-icoon-vector-geisoleerd-symbool-teken
-- https://nl.vecteezy.com/vector-kunst/6817337-pop-art-design-elementen-retro-bliksemschicht
-- https://nl.vecteezy.com/vector-kunst/577093-kruk-stoel-zitmeubelen-illustratie
-- https://nl.vecteezy.com/vector-kunst/2525492-glas-van-water-plat-ontwerp-geisoleerd-op-blauwe-achtergrond
 - https://nl.vecteezy.com/vector-kunst/13396613-chinese-restaurant-leeg-interieur-tekenfilm-vector
