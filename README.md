@@ -148,7 +148,30 @@ With the Codepens from Sanne I could understand better how to build my idea on s
 First in the HTML I had a form but when you click on the buttons, the page will refresh but that's not what I want so I changed form to section. But then I thought that I should also change fieldset to section.
 
 ### Version 3
+![Versie 3](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/versie-3-1.png)
+Now I have made radio buttons to choose which hair you want for your character. 
 
+![Versie 3](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/versie-3-2.png)
+![Versie 3](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/versie-3-3.png)
+I did that with adding the images into the HTML and than in the CSS you do hide it with display none. 
+
+### Version 4
+![Versie 4](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/versie-4-1.png)
+All my controls are working right now.
+
+- Swtich: Change gender
+- Rotate switch: Choose 3 different outfits, it starts with no clothes
+- Slider: Change skin color
+- Buttons: Change hair style
+
+![Versie 4](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/versie-4-2.png)
+Instead of disnplay none when input is checked, I have now that the url changes. This way the url changes to the right urls automatically when the switch is changed to the oposite gender. 
+
+![Versie 4](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/versie-4-3.png)
+I use container styles to change the the url of the rotate switch for the clothing. --clothes 2 here says: if value is 2 of the input name clothes than change the url to this one.
+
+![Versie 4](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/versie-4-4.png)
+To change the skin color, I use filter: brightness. Nils helped me with this one to make the calculation. But I don't understand it well yet. 
 
 ## Progress discussion
 I talked with Sanne about my first idea. He said that it was not a good idea to keep up with this subject. I can keep the controls but change the kids to monsters or something to make it more friendly. Sighn. So I should rethink about my project.
