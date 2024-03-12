@@ -73,6 +73,45 @@ body {
                         height: 100%;
                     }
                 }
+
+                /* Easter egg */
+                &:nth-of-type(5) {
+                    position: absolute;
+                    height: 100%;
+                    z-index: 3;
+
+                    &:has(div:first-of-type:hover) {
+                        div:last-of-type {
+                            transform: rotate(180deg);
+                        }
+                    }
+
+                    div:first-of-type {
+                        position: absolute;
+                        top: 145px;
+                        left: 70px;
+
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        z-index: 1000;
+                        opacity: 0;
+                        cursor: pointer;
+                    }
+
+                    div:last-of-type {
+                        position: relative;
+                        top: 160px;
+                        left: 100px;
+                        background-image: url("../img/boy-mouth.svg");
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        width: 30px;
+                        height: 10px;
+                        transform: rotate(0deg);
+                        transition: .2s;
+                    }
+                }
             }
         }
     }
@@ -143,6 +182,17 @@ body {
                     &:nth-of-type(3) {
                         div {
                             background-image: url("../img/girl-body.svg");
+                        }
+                    }
+
+                    /* Easter egg */
+                    &:nth-of-type(5) {
+                        div:last-of-type {
+                            top: 163px;
+                            left: 95px;
+                            background-image: url("../img/girl-mouth.svg");
+                            width: 40px;
+                            height: 15px;
                         }
                     }
                 }

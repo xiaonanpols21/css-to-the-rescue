@@ -29,16 +29,6 @@ For example:
 - Kids can go on levels to die so the point of it is that their heads have to explode. 
 - You can throw grenades in the room but that does not mean that they will die right away tho. They will change just more durty. But the more durty they can die tho but not that extreme or something. 
 
-**Progress discussion**
-I talked with Sanne about my first idea. He said that it was not a good idea to keep up with this subject. I can keep the controls but change the kids to monsters or something to make it more friendly. Sighn. So I should rethink about my project.
-
-After some thinking I go with my second idea of making a simulator to make your siginifant other
-
-Sanne helped me to understand to make a rotate slider and to make a casino switch because I said to him that I was stuck of understanding how to make these things.
-
-- https://codepen.io/shooft/pen/OJGJeVa
-- https://codepen.io/shooft/pen/BaEagwe
-
 ### Idea 2: Make your significant other
 I am going to make a simulator where you can style the perfect match for yourself. TanTan is an Asian dating app so that's why the name is TanTan en the person is familiar to an Asian person. 
 
@@ -182,6 +172,25 @@ I use container styles to change the the url of the rotate switch for the clothi
 
 ![Versie 4](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/versie-4-4.png)
 To change the skin color, I use filter: brightness. Nils helped me with this one to make the calculation. But I don't understand it well yet. 
+
+## Progress discussion
+### Gesprek 1
+I talked with Sanne about my first idea. He said that it was not a good idea to keep up with this subject. I can keep the controls but change the kids to monsters or something to make it more friendly. Sighn. So I should rethink about my project.
+
+After some thinking I go with my second idea of making a simulator to make your siginifant other
+
+Sanne helped me to understand to make a rotate slider and to make a casino switch because I said to him that I was stuck of understanding how to make these things.
+
+- https://codepen.io/shooft/pen/OJGJeVa
+- https://codepen.io/shooft/pen/BaEagwe
+
+### Gesprek 2
+![Versie 4](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/versie-4-1.png)
+I showed my work, which was until version 4. Sanne asked me what I was most proud of. I tolled him about the Clothing slider. I didn't knew that I could do that. 
+
+When I first started with my first idea, I had this idea and thought: How can I make this a reality? When I first started with coding of my design, I was a bit stuck and didn't know how where to begin. But when I got hulp to make the first start, it worked so that's what I'm proud of. That I could make my idea a reality. 
+
+Further, Sanne said I can make easter eggs so that's what I did the next week. 
 
 ## Resources
 - https://nl.vecteezy.com/vector-kunst/1377102-little-kids-friendly-character-set
