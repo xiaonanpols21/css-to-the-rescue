@@ -1,221 +1,213 @@
-body {
-    > section {
-        &:last-of-type {
-            display: grid;
-            grid-template-columns: 0.5fr 1fr;
-            gap: 40px 20px;
+body > section:last-of-type {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 40px 20px;
+}
 
-            section {
+body > section:last-of-type section {
+    /* Swtich gender */
+    &:nth-of-type(1) {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        position: relative;
+        margin: auto;
+        padding-top: 50px;
 
-               
-          
-                /* Swtich gender */
-                &:nth-of-type(1) {
-                    grid-row-start: 1;
-                    grid-row-end: 3;
-                    position: relative;
-                    margin: auto;
-                    padding-top: 50px;
+        &::before {
+            content:"";
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            width: 60px;
+            height: 60px;
+            background-color: var(--yellow);
+            border-radius: 20px;
+            transform: translateX(-50%);
+        }
 
-                    &::before {
-                        content:"";
-                        position: absolute;
-                        bottom: -30px;
-                        left: 50%;
-                        width: 60px;
-                        height: 60px;
-                        background-color: var(--yellow);
-                        border-radius: 20px;
-                        transform: translateX(-50%);
-                    }
+        input {
+            opacity: 0;
+        }
 
-                    input {
-                        opacity: 0;
-                    }
+        label {
+            display:grid;
+            height: 75px;
+            width: 20px;
+            background-color: var(--orange-100);
+            border-radius: 20px;
+            transition:2.5s;
+            transform-origin:center bottom;
+            transform:perspective(10em) rotateX(0deg);
+            place-content: start center;
+            transform-style: preserve-3d;
+        }
+        
+        label:has(:checked) {
+            transform:perspective(150px) rotateX(-180deg);
+        }
+        
+        label::before {
+            content:"";
+            position:relative;
+            display:block;
+            width: 70px;
+            height:70px;
+            background-color: var(--orange-200);
+            border-radius:50%;
+            transform:translateY( calc(-50px - 1px) ) rotateX(0deg);
+            transition:2.5s;
+        }
 
-                    label {
-                        display:grid;
-                        height: 75px;
-                        width: 20px;
-                        background-color: var(--orange-100);
-                        border-radius: 20px;
-                        transition:2.5s;
-                        transform-origin:center bottom;
-                        transform:perspective(10em) rotateX(0deg);
-                        place-content: start center;
-                        transform-style: preserve-3d;
-                    }
-                    
-                    label:has(:checked) {
-                        transform:perspective(150px) rotateX(-180deg);
-                    }
-                    
-                    label::before {
-                        content:"";
-                        position:relative;
-                        display:block;
-                        width: 70px;
-                        height:70px;
-                        background-color: var(--orange-200);
-                        border-radius:50%;
-                        transform:translateY( calc(-50px - 1px) ) rotateX(0deg);
-                        transition:2.5s;
-                    }
+        /* label::after {
+            content:"";
+            position: absolute;
+            bottom: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 60px;
+            background-color: var(--yellow);
+            z-index: -1;
+        } */
+        
+        label:has(:checked)::before {
+            transform:translateY( calc(-50px - 1px) ) rotateX(180deg);
+        }
+    }
+    
+    /* Change clothes */
+    &:nth-of-type(2) {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: end;
 
-                    /* label::after {
-                        content:"";
-                        position: absolute;
-                        bottom: -60px;
-                        left: 50%;
-                        transform: translateX(-50%);
-                        width: 60px;
-                        height: 60px;
-                        background-color: var(--yellow);
-                        z-index: -1;
-                    } */
-                    
-                    label:has(:checked)::before {
-                        transform:translateY( calc(-50px - 1px) ) rotateX(180deg);
-                    }
-                }
-                
-                /* Change clothes */
-                &:nth-of-type(2) {
-                    position: relative;
-                    display: flex;
-                    justify-content: center;
-                    align-items: end;
+        background-color:var(--yellow);
+        border-radius: 10px;
+        padding: 20px 20px 0 20px;
+        label {
+            position: absolute;
+            z-index: 1;
+            opacity: 0;
+        }
 
-                    background-color:var(--yellow);
-                    border-radius: 10px;
-                    padding: 20px 20px 0 20px;
-                    label {
-                        position: absolute;
-                        z-index: 1;
-                        opacity: 0;
-                    }
+        
+        
+        div {
+            position:relative;
+            width:8em;
+            aspect-ratio:2/1;
+            background-color: var(--orange-100);
+            border-radius:4em 4em 0 0;
+            
+            display:grid;
+            place-items:end center;
+        }
 
-                    
-                    
-                    div {
-                        position:relative;
-                        width:8em;
-                        aspect-ratio:2/1;
-                        background-color: var(--orange-100);
-                        border-radius:4em 4em 0 0;
-                        
-                        display:grid;
-                        place-items:end center;
-                    }
+        div::before {
+            position: relative;
+            z-index: 2;
+            content:"";
+            width:1em;
+            aspect-ratio:1;
+            
+            border-radius: 50%;
+            translate: 0 .5em;
 
-                    div::before {
-                        position: relative;
-                        z-index: 2;
-                        content:"";
-                        width:1em;
-                        aspect-ratio:1;
-                        
-                        border-radius: 50%;
-                        translate: 0 .5em;
+            background-image: radial-gradient(
+                black 50%,
+                var(--orange-200) 0
+            );
 
-                        background-image: radial-gradient(
-                            black 50%,
-                            var(--orange-200) 0
-                        );
+        }
 
-                    }
+        div::after {
+            content:"";
+            position:absolute;
+            width:1em;
+            height:100%;
+            background-color: var(--orange-200);
+            clip-path:polygon(50% 0, 100% 100%, 0 100%, 50% 0);
+            transform-origin:center bottom;
+            rotate:calc( -90deg + (var(--clothes) - 1) * 60deg );
+        }
+    }
+    
+    /* Change skin color */
+    &:nth-of-type(3) {
+        grid-column-start: 2;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
 
-                    div::after {
-                        content:"";
-                        position:absolute;
-                        width:1em;
-                        height:100%;
-                        background-color: var(--orange-200);
-                        clip-path:polygon(50% 0, 100% 100%, 0 100%, 50% 0);
-                        transform-origin:center bottom;
-                        rotate:calc( -90deg + (var(--clothes) - 1) * 60deg );
-                    }
-                }
-                
-                /* Change skin color */
-                &:nth-of-type(3) {
-                    grid-column-start: 2;
-                    position: relative;
-                    top: 50%;
-                    transform: translateY(-50%);
+        /* Bron: https://stackoverflow.com/questions/15935837/how-to-display-a-range-input-slider-vertically */
+        input {
+            position: relative;
+            top: 60%;
+            transform: translateY(-50%);
+            width: 100%;
+            height: 10px;
+            appearance: none;
+            background: var(--blue);
+            border-radius: 20px;
 
-                    /* Bron: https://stackoverflow.com/questions/15935837/how-to-display-a-range-input-slider-vertically */
-                    input {
-                        position: relative;
-                        top: 60%;
-                        transform: translateY(-50%);
-                        width: 100%;
-                        height: 10px;
-                        appearance: none;
-                        background: var(--blue);
-                        border-radius: 20px;
-
-                        &::-webkit-slider-thumb {
-                            appearance: none;
-                            width: 10px;
-                            height: 40px;
-                            background: var(--orange-200);
-                            border-radius: 20px;
-                        }
-                    }
-                }
-                
-                /* Change hair */
-                &:nth-of-type(4) {
-                    grid-column-start: 2;
-                    display: flex;
-                    justify-content: center;
-                    gap: 20px;
-
-                    /* Bron: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio */
-                    .container {
-                        display: block;
-                        position: relative;
-                        width: 50px;
-                        height: 50px;
-                        cursor: pointer;
-                    }
-
-                    .container input {
-                        position: absolute;
-                        opacity: 0;
-                        cursor: pointer;
-                    }
-                      
-                    .checkmark {
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        height: 50px;
-                        width: 50px;
-                        background-color: var(--black);
-                        border-radius: 50%;
-
-                        &:after {
-                            content: "";
-                            position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-                            background-image: url("../img/schaar.svg");
-                            background-size: contain;
-                            width: 18px;
-                            height: 19px;
-                        }
-                    }
-                      
-                    /* When the radio button is checked, add a blue background */
-                    .container input:checked ~ .checkmark {
-                        background-color: var(--orange-100);
-                    }
-                }
+            &::-webkit-slider-thumb {
+                appearance: none;
+                width: 10px;
+                height: 40px;
+                background: var(--orange-200);
+                border-radius: 20px;
             }
         }
     }
-}
+    
+    /* Change hair */
+    &:nth-of-type(4) {
+        grid-column-start: 2;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
 
+        /* Bron: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio */
+        .container {
+            display: block;
+            position: relative;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+            
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 50px;
+            width: 50px;
+            background-color: var(--black);
+            border-radius: 50%;
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-image: url("../img/schaar.svg");
+                background-size: contain;
+                width: 18px;
+                height: 19px;
+            }
+        }
+            
+        /* When the radio button is checked, add a blue background */
+        .container input:checked ~ .checkmark {
+            background-color: var(--orange-100);
+        }
+    }
+}

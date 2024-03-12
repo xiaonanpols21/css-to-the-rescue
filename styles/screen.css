@@ -86,30 +86,32 @@ body {
                         }
                     }
 
-                    div:first-of-type {
-                        position: absolute;
-                        top: 145px;
-                        left: 70px;
+                    div {
+                        &:first-of-type {
+                            position: absolute;
+                            top: 145px;
+                            left: 70px;
+    
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            z-index: 1000;
+                            opacity: 0;
+                            cursor: pointer;
+                        }
 
-                        width: 20px;
-                        height: 20px;
-                        border-radius: 50%;
-                        z-index: 1000;
-                        opacity: 0;
-                        cursor: pointer;
-                    }
-
-                    div:last-of-type {
-                        position: relative;
-                        top: 160px;
-                        left: 100px;
-                        background-image: url("../img/boy-mouth.svg");
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        width: 30px;
-                        height: 10px;
-                        transform: rotate(0deg);
-                        transition: .2s;
+                        &:last-of-type {
+                            position: relative;
+                            top: 160px;
+                            left: 100px;
+                            background-image: url("../img/boy-mouth.svg");
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            width: 30px;
+                            height: 10px;
+                            transform: rotate(0deg);
+                            transition: .2s;
+                        }
                     }
                 }
             }
@@ -120,46 +122,25 @@ body {
         **** Hair input ***
     */
     &:has(input[value="Hair-1"]:checked) {
-        > section {
-            &:first-of-type {
-                section {
-                    /* Hair */
-                    &:nth-of-type(4) {
-                        div {
-                            background-image: url("../img/boy-hair-1.svg");
-                        }
-                    }
-                }
+        > section:first-of-type section:nth-of-type(4) {
+            div {
+                background-image: url("../img/boy-hair-1.svg");
             }
         }
     }
 
     &:has(input[value="Hair-2"]:checked) {
-        > section {
-            &:first-of-type {
-                section {
-                    /* Hair */
-                    &:nth-of-type(4) {
-                        div {
-                            background-image: url("../img/boy-hair-2.svg");
-                        }
-                    }
-                }
+        > section:first-of-type section:nth-of-type(4) {
+            div {
+                background-image: url("../img/boy-hair-2.svg");
             }
         }
     }
 
     &:has(input[value="Hair-3"]:checked) {
-        > section {
-            &:first-of-type {
-                section {
-                    /* Hair */
-                    &:nth-of-type(4) {
-                        div {
-                            background-image: url("../img/boy-hair-3.svg");
-                        }
-                    }
-                }
+        > section:first-of-type section:nth-of-type(4) {
+            div {
+                background-image: url("../img/boy-hair-3.svg");
             }
         }
     }
@@ -168,33 +149,29 @@ body {
         **** Body checked ***
     */
     &:has(input[type="checkbox"]:checked) {
-        > section {
-            &:first-of-type {
-                section {
-                    /* Face */
-                    &:nth-of-type(2) {
-                        div {
-                            background-image: url("../img/girl-face.svg");
-                        }
-                    }
+        > section:first-of-type section {
+            /* Face */
+            &:nth-of-type(2) {
+                div {
+                    background-image: url("../img/girl-face.svg");
+                }
+            }
 
-                    /* Body */
-                    &:nth-of-type(3) {
-                        div {
-                            background-image: url("../img/girl-body.svg");
-                        }
-                    }
+            /* Body */
+            &:nth-of-type(3) {
+                div {
+                    background-image: url("../img/girl-body.svg");
+                }
+            }
 
-                    /* Easter egg */
-                    &:nth-of-type(5) {
-                        div:last-of-type {
-                            top: 163px;
-                            left: 95px;
-                            background-image: url("../img/girl-mouth.svg");
-                            width: 40px;
-                            height: 15px;
-                        }
-                    }
+            /* Easter egg */
+            &:nth-of-type(5) {
+                div:last-of-type {
+                    top: 163px;
+                    left: 95px;
+                    background-image: url("../img/girl-mouth.svg");
+                    width: 40px;
+                    height: 15px;
                 }
             }
         }
@@ -205,40 +182,30 @@ body {
     */
     &:has(input[type="checkbox"]:checked) {
         &:has(input[value="Hair-1"]:checked) {
-            > section {
-                &:first-of-type {
-                    section {
-                        /* Hair */
-                        &:nth-of-type(4) {
-                            div {
-                                background-image: url("../img/girl-hair-1.svg");
-                            }
-                        }
+            > section:first-of-type section {
+                &:nth-of-type(4) {
+                    div {
+                        background-image: url("../img/girl-hair-1.svg");
                     }
                 }
             }
         }
 
         &:has(input[value="Hair-2"]:checked) {
-            > section {
-                &:first-of-type {
-                    section {
-                        /* Hair */
-                        &:nth-of-type(4) {
-                            div {
-                                background-image: url("../img/girl-hair-1.svg");
+            > section:first-of-type section {
+                &:nth-of-type(4) {
+                    div {
+                        background-image: url("../img/girl-hair-1.svg");
 
-                                &::before {
-                                    content: "";
-                                    position: absolute;
-                                    background-image: url("../img/girl-hair-2.svg");
-                                    background-size: contain;
-                                    transform: translateZ(-1px);
-                             
-                                    width: 248px;
-                                    height: 440px;
-                                }
-                            }
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            background-image: url("../img/girl-hair-2.svg");
+                            background-size: contain;
+                            transform: translateZ(-1px);
+                     
+                            width: 248px;
+                            height: 440px;
                         }
                     }
                 }
@@ -246,15 +213,10 @@ body {
         }
 
         &:has(input[value="Hair-3"]:checked) {
-            > section {
-                &:first-of-type {
-                    section {
-                        /* Hair */
-                        &:nth-of-type(4) {
-                            div {
-                                background-image: url("../img/girl-hair-3.svg");
-                            }
-                        }
+            > section:first-of-type section {
+                &:nth-of-type(4) {
+                    div {
+                        background-image: url("../img/girl-hair-3.svg");
                     }
                 }
             }
@@ -266,32 +228,20 @@ body {
     **** Change clothes ***
 */
 @container style(--clothes: 2) {
-    body {
-        > section {
-            &:first-of-type {
-                section {
-                    &:nth-of-type(1) {
-                        div {
-                            background-image: url("../img/boy-clothes-1.svg");
-                        }
-                    }
-                }
+    body > section:first-of-type section {
+        &:nth-of-type(1) {
+            div {
+                background-image: url("../img/boy-clothes-1.svg");
             }
         }
     }
 
     /* Body checked */
     &:has(input[type="checkbox"]:checked) {
-        body {
-            > section {
-                &:first-of-type {
-                    section {
-                        &:nth-of-type(1) {
-                            div {
-                                background-image: url("../img/girl-clothes-1.svg");
-                            }
-                        }
-                    }
+        body > section:first-of-type section {
+            &:nth-of-type(1) {
+                div {
+                    background-image: url("../img/girl-clothes-1.svg");
                 }
             }
         }
@@ -299,32 +249,20 @@ body {
 }
 
 @container style(--clothes: 3) {
-    body {
-        > section {
-            &:first-of-type {
-                section {
-                    &:nth-of-type(1) {
-                        div {
-                            background-image: url("../img/boy-clothes-2.svg");
-                        }
-                    }
-                }
+    body > section:first-of-type section {
+        &:nth-of-type(1) {
+            div {
+                background-image: url("../img/boy-clothes-2.svg");
             }
         }
     }
 
     /* Body checked */
     &:has(input[type="checkbox"]:checked) {
-        body {
-            > section {
-                &:first-of-type {
-                    section {
-                        &:nth-of-type(1) {
-                            div {
-                                background-image: url("../img/girl-clothes-2.svg");
-                            }
-                        }
-                    }
+        body > section:first-of-type section {
+            &:nth-of-type(1) {
+                div {
+                    background-image: url("../img/girl-clothes-2.svg");
                 }
             }
         }
@@ -332,32 +270,20 @@ body {
 }
 
 @container style(--clothes: 4) {
-    body {
-        > section {
-            &:first-of-type {
-                section {
-                    &:nth-of-type(1) {
-                        div {
-                            background-image: url("../img/boy-clothes-3.svg");
-                        }
-                    }
-                }
+    body > section:first-of-type section {
+        &:nth-of-type(1) {
+            div {
+                background-image: url("../img/boy-clothes-3.svg");
             }
         }
     }
 
     /* Body checked */
     &:has(input[type="checkbox"]:checked) {
-        body {
-            > section {
-                &:first-of-type {
-                    section {
-                        &:nth-of-type(1) {
-                            div {
-                                background-image: url("../img/girl-clothes-3.svg");
-                            }
-                        }
-                    }
+        body > section:first-of-type section {
+            &:nth-of-type(1) {
+                div {
+                    background-image: url("../img/girl-clothes-3.svg");
                 }
             }
         }

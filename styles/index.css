@@ -23,6 +23,17 @@ input, label {
     cursor: pointer;
 }
 
+/* Visually-hidden */
+h2, h3 {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
 h1 {
     display: inline-flex;
     position: relative;
@@ -45,56 +56,48 @@ h1 {
     /* Bron: https://codepen.io/WaadAlnwar/pen/LYZGbwv?editors=1100 */
     /* Zie prompts: https://chemical-bunny-323.notion.site/BT-Chat-GPT-Docs-206def2037ed495d9716a170aeb81b99#7b439254117241de8236651b39ddbf38 */
     span {
-        animation: waviy 1s infinite;
-        animation-fill-mode: both;
         display: inline-block;
         vertical-align: middle;
+        animation: waviy 1s infinite;
+        animation-fill-mode: both;
+        animation-delay: var(--delay, 0s);
 
         &:nth-child(1) {
-            animation-delay: 0.1s;
+            --delay: 0.1s;
         }
     
         &:nth-child(2) {
-            animation-delay: 0.2s;
+            --delay: 0.2s;
         }
     
         &:nth-child(3) {
-            animation-delay: 0.3s;
+            --delay: 0.3s;
         }
     
         &:nth-child(4) {
-            animation-delay: 0.4s;
+            --delay: 0.4s;
         }
     
         &:nth-child(5) {
-            animation-delay: 0.5s;
+            --delay: 0.5s;
         }
     
         &:nth-child(6) {
-            animation-delay: 0.6s;
+            --delay: 0.6s;
         }
     }
 }
 
 @keyframes waviy {
-    0%,40%,100% {
+    0%, 40%, 100% {
       transform: translateY(0)
     }
+
     20% {
       transform: translateY(-20px)
     }
-  }
-
-/* Visually-hidden */
-h2, h3 {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
 }
+
 
 
 

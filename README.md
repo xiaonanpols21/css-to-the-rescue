@@ -176,6 +176,29 @@ To change the skin color, I use filter: brightness. Nils helped me with this one
 ### Version 5
 I have added an Easter Egg, so if you can find it, let me know. 
 
+I also cleaned my code. When Sanne helped me he was amazed that I use nesting for everything. So I thought I should clean my code and should not nest where the places are empty. So if I have:
+
+```css
+body {
+  section {
+    section {
+      div {
+
+      }
+    }
+  }
+}
+```
+
+I should do:
+```css
+body section section {
+  div {
+
+  }
+}
+```
+
 ## Progress discussion
 ### Gesprek 1
 I talked with Sanne about my first idea. He said that it was not a good idea to keep up with this subject. I can keep the controls but change the kids to monsters or something to make it more friendly. Sighn. So I should rethink about my project.
