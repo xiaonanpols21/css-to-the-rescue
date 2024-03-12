@@ -173,6 +173,9 @@ I use container styles to change the the url of the rotate switch for the clothi
 ![Versie 4](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/versie-4-4.png)
 To change the skin color, I use filter: brightness. Nils helped me with this one to make the calculation. But I don't understand it well yet. 
 
+### Version 5
+I have added an Easter Egg, so if you can find it, let me know. 
+
 ## Progress discussion
 ### Gesprek 1
 I talked with Sanne about my first idea. He said that it was not a good idea to keep up with this subject. I can keep the controls but change the kids to monsters or something to make it more friendly. Sighn. So I should rethink about my project.
