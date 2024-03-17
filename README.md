@@ -200,7 +200,7 @@ body section section {
 ```
 
 ## Progress discussion
-### Gesprek 1
+### Talking 1
 I talked with Sanne about my first idea. He said that it was not a good idea to keep up with this subject. I can keep the controls but change the kids to monsters or something to make it more friendly. Sighn. So I should rethink about my project.
 
 After some thinking I go with my second idea of making a simulator to make your siginifant other
@@ -210,13 +210,20 @@ Sanne helped me to understand to make a rotate slider and to make a casino switc
 - https://codepen.io/shooft/pen/OJGJeVa
 - https://codepen.io/shooft/pen/BaEagwe
 
-### Gesprek 2
+### Talking 2
 ![Versie 4](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/versie-4-1.png)
 I showed my work, which was until version 4. Sanne asked me what I was most proud of. I tolled him about the Clothing slider. I didn't knew that I could do that. 
 
 When I first started with my first idea, I had this idea and thought: How can I make this a reality? When I first started with coding of my design, I was a bit stuck and didn't know how where to begin. But when I got hulp to make the first start, it worked so that's what I'm proud of. That I could make my idea a reality. 
 
 Further, Sanne said I can make easter eggs so that's what I did the next week. 
+
+### Talking 3
+I showed my project and a few things came up to change:
+
+- Title more playfull
+- Rotate slider, change clothes so that it is like that the character gets more clothes. Other wise the input style is not right
+- Make the slider thumb more thick
 
 ## Resources
 - https://nl.vecteezy.com/vector-kunst/1377102-little-kids-friendly-character-set
