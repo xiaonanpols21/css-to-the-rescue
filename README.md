@@ -198,6 +198,28 @@ body section section {
   }
 }
 ```
+### Version 6
+![Versie 6](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/versie-6-1.png)
+I wanted to change the color of the title with an animation from left to right. The letter should wait when the letter before is 100% purple.
+
+![Versie 6](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/versie-6-2.png)
+I had that at first. I did that to add a data type in the html.
+
+![Versie 6](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/versie-6-3.png)
+And give each span a delay. 
+
+![Versie 6](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/versie-6-4.png)
+But when I had that, I wanted to repeat the animation. But that can't because than you have to make difficult calculation for each span to return the animation. So I changed it with the help of docent. 
+
+### Version 7
+![Versie 7](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/versie-7-1.png)
+So now I have what I wanted.
+
+![Versie 7](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/versie-7-2.png)
+I use background-image linear-gradient. And give each span a delay.
+
+![Versie 7](https://github.com/xiaonanpols21/css-to-the-rescue/blob/main/img/readme/versie-7-3.png)
+To let the text jump, you can't use translate because than the background-image will not work. So I use padding to do it.
 
 ## Progress discussion
 ### Talking 1
