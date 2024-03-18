@@ -12,11 +12,24 @@
 body {
     font-family: "Concert One", sans-serif;
     padding: 20px;
-}
 
-div {
-    display: flex;
-    justify-content: center;
+    > div {
+        position: relative;
+        width: fit-content;
+        height: 100px;
+        margin: auto;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: -20px;
+            transform: translateY(-20%);
+            background-image: url("../img/logo.svg");
+            width: 50px;
+            height: 50px;
+        }
+    }
 }
 
 input, label {
@@ -34,117 +47,67 @@ h2, h3 {
     width: 1px;
 }
 
+@property --van {
+    syntax: "<percentage>";
+    initial-value: 0%;
+    inherits: false;
+}
+
 h1 {
-    display: inline-flex;
-    position: relative;
-    width: fit-content;
     margin-left: 50px;
     font-size: 67px;
-    color: var(--orange-200);
 
-    &::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: calc(-50px - 20px);
-        transform: translateY(-50%);
-        background-image: url("../img/logo.svg");
-        width: 50px;
-        height: 50px;
-    }
+    background: linear-gradient(to right, var(--blue) var(--van), var(--orange-200) var(--van));
+    background-clip: text;
+    color: transparent;
+    display: inline-flex;
+    animation: vullen 4s alternate infinite;
 
-    /* Bron: https://codepen.io/WaadAlnwar/pen/LYZGbwv?editors=1100 */
-    /* Zie prompts: https://chemical-bunny-323.notion.site/BT-Chat-GPT-Docs-206def2037ed495d9716a170aeb81b99#7b439254117241de8236651b39ddbf38 */
     span {
         display: inline-block;
-        vertical-align: middle;
-        animation: waviy 1s infinite;
-        animation-fill-mode: both;
-        animation-delay: var(--delay, 0s);
-
-        &::before {
-            top: 0;
-            left: 0;
-            height: 100%;
-            color: #8338ec;
-            overflow: hidden;
-            position: absolute;
-            content: attr(data-text);
-            animation: 
-            animate-begin 1s var(--letter-delay-begin) linear infinite both ,
-            animate-end 1s var(--letter-delay-end) linear  forwards;
-        }
+        animation: spring 1s var(--delay) infinite alternate;
 
         &:nth-child(1) {
             --delay: 0.1s;
-            --letter-delay-begin: 0s;
-            --letter-delay-end: 12s;
+          }
 
-        }
-    
         &:nth-child(2) {
-            --delay: 0.2s;
-            --letter-delay-begin: 1s;
-            --letter-delay-end: 11s;
+          --delay: 0.2s;
         }
     
         &:nth-child(3) {
-            --delay: 0.3s;
-            --letter-delay-begin: 2s;
-            --letter-delay-end: 10s;
+          --delay: 0.3s;
         }
-    
         &:nth-child(4) {
-            --delay: 0.4s;
-            --letter-delay-begin: 3s;
-            --letter-delay-end: 9s;
+          --delay: 0.4s;
         }
-    
         &:nth-child(5) {
-            --delay: 0.5s;
-            --letter-delay-begin: 4s;
-            --letter-delay-end: 8s;
+          --delay: 0.5s;
         }
-    
         &:nth-child(6) {
-            --delay: 0.6s;
-            --letter-delay-begin: 5s;
-            --letter-delay-end: 7s;
+          --delay: 0.6s;
         }
-    }
-}
-
-@keyframes waviy {
-    0%, 40%, 100% {
-      transform: translateY(0)
-    }
-
-    20% {
-      transform: translateY(-20px)
-    }
+      }
 }
 
 
-
-@keyframes animate-begin {
-	0% {
-		width: 0;
-	}
-
-    100% {
-        width: 100%;
-    }
-}
-
-
-
-@keyframes animate-end {
-
-    0% {
-        width: 100%;
+@keyframes spring {
+    from {
+      padding-top: 0;
     }
 
-    100% {
-		width: 0;
-	}
+    to {
+      padding-top: 30px;
+    }
+  }
+  
+@keyframes vullen {
+    from {
+        --van: 0%;
+    }
+    
+    to {
+        --van: 100%;
+    }
 }
+  

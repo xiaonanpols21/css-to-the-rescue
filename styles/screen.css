@@ -11,6 +11,12 @@ body {
             background-size: cover;
             background-position: center;
 
+            div {
+                display: flex;
+                justify-content: center;
+            }
+            
+
             section {
                 position: relative;
                 left: 50%;
