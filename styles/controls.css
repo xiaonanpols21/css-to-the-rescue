@@ -153,10 +153,10 @@ body > section:last-of-type section {
 
             &::-webkit-slider-thumb {
                 appearance: none;
-                width: 10px;
+                width: 20px;
                 height: 40px;
                 background: var(--orange-200);
-                border-radius: 20px;
+                border-radius: 5px;
             }
         }
     }
