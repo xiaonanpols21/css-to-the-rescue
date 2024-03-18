@@ -62,16 +62,58 @@ h1 {
         animation-fill-mode: both;
         animation-delay: var(--delay, 0s);
 
+        &::before {
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            color: #8338ec;
+            overflow: hidden;
+            position: absolute;
+            content: attr(data-text);
+            animation: animate 5s linear infinite forwards;
+            animation-delay: var(--letter-delay, 0s);
+
+            &:nth-child(1) {
+                --letter-delay: 0s;
+            }
+        
+            &:nth-child(2) {
+                --letter-delay: 2.5s;
+            }
+        
+            &:nth-child(3) {
+                --letter-delay: 5s;
+            }
+        
+            &:nth-child(4) {
+                --letter-delay: 0.8s;
+            }
+        
+            &:nth-child(5) {
+                --letter-delay: 1s;
+            }
+        
+            &:nth-child(6) {
+                --letter-delay: 1.2s;
+            }
+     
+        }
+
         &:nth-child(1) {
             --delay: 0.1s;
+            --letter-delay: 0s;
+
         }
     
         &:nth-child(2) {
             --delay: 0.2s;
+            --letter-delay: 1s;
         }
     
         &:nth-child(3) {
             --delay: 0.3s;
+            --letter-delay: 2s;
         }
     
         &:nth-child(4) {
@@ -99,6 +141,28 @@ h1 {
 }
 
 
+
+@keyframes animate {
+	0% {
+		width: 0;
+	}
+
+    10% {
+        width: 100%;
+    }
+
+	50% {
+		width: 100%;
+	}
+
+    90% {
+        width: 100%;
+    }
+
+    100% {
+		width: 0;
+	}
+}
 
 
 
