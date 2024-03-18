@@ -65,67 +65,51 @@ h1 {
         &::before {
             top: 0;
             left: 0;
-            width: 0;
             height: 100%;
             color: #8338ec;
             overflow: hidden;
             position: absolute;
             content: attr(data-text);
-            animation: animate 5s linear infinite forwards;
-            animation-delay: var(--letter-delay, 0s);
-
-            &:nth-child(1) {
-                --letter-delay: 0s;
-            }
-        
-            &:nth-child(2) {
-                --letter-delay: 2.5s;
-            }
-        
-            &:nth-child(3) {
-                --letter-delay: 5s;
-            }
-        
-            &:nth-child(4) {
-                --letter-delay: 0.8s;
-            }
-        
-            &:nth-child(5) {
-                --letter-delay: 1s;
-            }
-        
-            &:nth-child(6) {
-                --letter-delay: 1.2s;
-            }
-     
+            animation: 
+            animate-begin 1s var(--letter-delay-begin) linear infinite both ,
+            animate-end 1s var(--letter-delay-end) linear  forwards;
         }
 
         &:nth-child(1) {
             --delay: 0.1s;
-            --letter-delay: 0s;
+            --letter-delay-begin: 0s;
+            --letter-delay-end: 12s;
 
         }
     
         &:nth-child(2) {
             --delay: 0.2s;
-            --letter-delay: 1s;
+            --letter-delay-begin: 1s;
+            --letter-delay-end: 11s;
         }
     
         &:nth-child(3) {
             --delay: 0.3s;
-            --letter-delay: 2s;
+            --letter-delay-begin: 2s;
+            --letter-delay-end: 10s;
         }
     
         &:nth-child(4) {
             --delay: 0.4s;
+            --letter-delay-begin: 3s;
+            --letter-delay-end: 9s;
         }
     
         &:nth-child(5) {
             --delay: 0.5s;
+            --letter-delay-begin: 4s;
+            --letter-delay-end: 8s;
         }
     
         &:nth-child(6) {
             --delay: 0.6s;
+            --letter-delay-begin: 5s;
+            --letter-delay-end: 7s;
         }
     }
 }
@@ -142,20 +126,21 @@ h1 {
 
 
 
-@keyframes animate {
+@keyframes animate-begin {
 	0% {
 		width: 0;
 	}
 
-    10% {
+    100% {
         width: 100%;
     }
+}
 
-	50% {
-		width: 100%;
-	}
 
-    90% {
+
+@keyframes animate-end {
+
+    0% {
         width: 100%;
     }
 
@@ -163,6 +148,3 @@ h1 {
 		width: 0;
 	}
 }
-
-
-
