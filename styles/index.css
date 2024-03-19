@@ -65,7 +65,7 @@ h1 {
 
     span {
         display: inline-block;
-        animation: spring 1s var(--delay) infinite alternate;
+        animation: spring 1s var(--delay) infinite alternate ease-in;
 
         &:nth-child(1) {
             --delay: 0.1s;
