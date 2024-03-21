@@ -63,7 +63,12 @@ body {
                         background-repeat: no-repeat;
                         background-position: center;
                         height: 100%;
-                        filter: brightness(calc(0.6 + var(--skin, 3) / 10));
+
+                        --basis:.6;
+                        --variatie:calc( var(--skin, 3) / 10);
+                        filter:brightness( calc(var(--basis) + var(--variatie) ) );
+
+                        /* filter: brightness(calc(0.6 + var(--skin, 3) / 10)); */
                     }
                 }
 
@@ -128,10 +133,8 @@ body {
         **** Hair input ***
     */
     &:has(input[value="Hair-1"]:checked) {
-        > section:first-of-type section:nth-of-type(4) {
-            div {
-                background-image: url("../img/boy-hair-1.svg");
-            }
+        > section:first-of-type section:nth-of-type(4) div {
+            background-image: url("../img/boy-hair-1.svg");
         }
     }
 
